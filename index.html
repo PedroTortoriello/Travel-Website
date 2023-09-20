@@ -44,8 +44,6 @@
                         <i class="ri-moon-line change-theme" id="theme-button"></i>
                     </div>
 
-                    <i class="ri-close-line nav__close" id="nav-close"></i>
-                </div>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-function-line"></i>
@@ -60,8 +58,8 @@
 
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <span class="home__data-subtitle">Faça a sua melhor viagem</span>
-                        <h1 class="home__data-title">Escolha o seu Pacote<br>e faça sua viagem</h1>
+                        <span class="home__data-subtitle">Explore o Mundo</span>
+                        <h1 class="home__data-title">Escolha o seu Pacote<br>e Faça sua Viagem</h1>
                         <a href="#place" class="button">Pacotes</a>
 
                     </div>
@@ -205,6 +203,9 @@
                                     <h3 class="place__title">Orlando</h3>
                                     <span class="place__subtitle">EUA</span>
                                     <span class="place__price">R$23.000</span>
+                                    <button class="button button--flex place__button">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -223,6 +224,9 @@
                                     <h3 class="place__title">Veneza</h3>
                                     <span class="place__subtitle">Itália</span>
                                     <span class="place__price">R$25.000</span>
+                                    <button class="button button--flex place__button">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </button>
                                 </div>
                             </div>
 
@@ -242,9 +246,12 @@
                                     <h3 class="place__title">New York</h3>
                                     <span class="place__subtitle">EUA</span>
                                     <span class="place__price">R$20.500</span>
+                                    <button class="button button--flex place__button">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </button>
                                 </div>
                             </div>
-
+                            
                         </div>
 
                         <!--==================== PLACES CARD 4 ====================-->
@@ -261,6 +268,9 @@
                                     <h3 class="place__title">Bariloche</h3>
                                     <span class="place__subtitle">Argentina</span>
                                     <span class="place__price">$R$15.000</span>
+                                    <button class="button button--flex place__button">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </button>
                                 </div>
                             </div>
 
@@ -280,6 +290,9 @@
                                     <h3 class="place__title">Paris</h3>
                                     <span class="place__subtitle">França</span>
                                     <span class="place__price">R$23.000</span>
+                                    <button class="button button--flex place__button">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -297,6 +310,9 @@
                                     <h3 class="place__title">Lisboa</h3>
                                     <span class="place__subtitle">Portugal</span>
                                     <span class="place__price">R$27.000</span>
+                                    <button class="button button--flex place__button">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -315,6 +331,9 @@
                                 <h3 class="place__title">Buenos Aires</h3>
                                 <span class="place__subtitle">Argentina</span>
                                 <span class="place__price">R$17.600</span>
+                                <button class="button button--flex place__button">
+                                    <i class="ri-arrow-right-line"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -430,10 +449,14 @@
             </div>
         </footer>
 
-         <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line scrollup__icon"></i>
-        </a>
+        <!--========== CHAT-BOT ==========-->
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger
+                intent="WELCOME"
+                chat-title="AssistenteVirtual"
+                agent-id="219efb0f-c7de-49db-818f-3c86e2f7e611"
+                language-code="pt-br"
+            ></df-messenger>
 
         <!--=============== SCROLL REVEAL===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
