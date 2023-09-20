@@ -220,6 +220,15 @@ input {
   position: relative;
 }
 
+.nav__close {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
